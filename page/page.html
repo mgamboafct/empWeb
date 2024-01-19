@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahcmm -</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://kit.fontawesome.com/5898ab3bb8.js" crossorigin="anonymous"></script>
+    <script src="../script.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="header-name">
+            <h1 class="name"></h1>
+        </div>
+        
+        <div class="login">
+            <button class="login-btn" onclick="openPopup()">Login</button>
+        </div>
+
+        <div class="popup" id="loginPopup">
+            <h2 class="userName">Login</h2>
+            <ul class="userList">
+                <li id="a" onclick="selectUser('André')">André</li>
+                <li id="c" onclick="selectUser('Constança')">Constança</li>
+                <li id="h" onclick="selectUser('Helena')">Helena</li>
+                <li id="ma" onclick="selectUser('Maria')">Maria</li>
+                <li id="mm" onclick="selectUser('Martim')">Martim</li>
+            </ul>
+            <button id="close" onclick="closePopup()">X</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="pages-flex">
+            <nav class="pages">
+                <a href="../index.html">Página Principal</a>
+                <a href="page.html?page_name=Apontamentos&user_page=false">Apontamentos</a>
+                <a href="page.html?page_name=Avisos&user_page=false">Avisos</a>
+                <a href="../calendar/calendar.html">Calendário</a>
+                <a href="../gpt/gpt.html">ChatGpt</a>
+                <a href="page.html?page_name=Projeto&user_page=false">Projeto</a>
+
+                <br>
+                <a class="a" href="page.html?page_name=André&user_page=true">André</a>
+                <a class="c" href="page.html?page_name=Constança&user_page=true">Constança</a>
+                <a class="h" href="page.html?page_name=Helena&user_page=true">Helena</a>
+                <a class="ma" href="page.html?page_name=Maria&user_page=true">Maria</a>
+                <a class="mm" href="page.html?page_name=Martim&user_page=true">Martim</a>
+            </nav>
+        </div>
+        <div class="posts">
+            <div class="post">
+              <span class="user">Username1</span>
+              <span> - </span>
+              <span class="time">22min</span>
+              <p class="content">This is the content of the first post.</p>
+            </div>
+            <div class="post">
+              <span class="user">Username2</span>
+              <span> - </span>
+              <span class="time">22min</span>
+              <p class="content">Another post with some content.</p>
+            </div>
+            <div class="post">
+              <span class="user">Username2</span>
+              <span> - </span>
+              <span class="time">22min</span>
+              <p class="content">Another post with some content.</p>
+            </div>
+            <div class="post">
+              <span class="user">Username2</span>
+              <span> - </span>
+              <span class="time">22min</span>
+              <p class="content">Another post with some content.</p>
+            </div>
+            <div class="post">
+              <span class="user">Username2</span>
+              <span> - </span>
+              <span class="time">22min</span>
+              <p class="content">Another post with some content.</p>
+            </div>
+            <div class="post">
+              <span class="user">Username2</span>
+              <span> - </span>
+              <span class="time">22min</span>
+              <p class="content">Another post with some content.</p>
+            </div>
+            <div class="post">
+              <span class="user">Username2</span>
+              <span> - </span>
+              <span class="time">22min</span>
+              <p class="content">Another post with some content.</p>
+            </div>
+            <div class="post">
+              <span class="user">Username2</span>
+              <span> - </span>
+              <span class="time">22min</span>
+              <p class="content">Another post with some content.</p>
+            </div>
+            <div class="post">
+              <span class="user">Username2</span>
+              <span> - </span>
+              <span class="time">22min</span>
+              <p class="content">Another post with some content.</p>
+            </div>
+            <div class="post">
+              <span class="user">Username2</span>
+              <span> - </span>
+              <span class="time">22min</span>
+              <p class="content">Another post with some content.</p>
+            </div>
+            <div class="post">
+              <span class="user">Username2</span>
+              <span> - </span>
+              <span class="time">22min</span>
+              <p class="content">Another post with some content.</p>
+            </div>
+            <div class="post">
+              <span class="user">Username2</span>
+              <span> - </span>
+              <span class="time">22min</span>
+              <p class="content">Another post with some content.</p>
+            </div>
+            <div class="post">
+              <span class="user">Username2</span>
+              <span> - </span>
+              <span class="time">22min</span>
+              <p class="content">Another post with some content.</p>
+            </div>
+            <div class="post">
+              <span class="user">Username2</span>
+              <span> - </span>
+              <span class="time">22min</span>
+              <p class="content">Another post with some content.</p>
+            </div>
+          </div>
+        <div class="make-post">
+            <button id='create_btn' class="create" onclick="openPostPopup()">Publicar</button>
+        </div>
+
+        <div class="popup" id="postPopup">
+            <button id="close" onclick="closePostPopup()">X</button>
+        
+            <textarea id="postTextArea" placeholder="Escreve a tua publicação..."></textarea>
+        
+            <input type="file" id="fileInput" accept="image/*, video/*, audio/*">
+        
+            <button id="submit" onclick="submitPost()">Submit</button>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div id="clock"></div>
+    </footer>
+</body>
+</html>

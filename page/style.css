@@ -1,0 +1,122 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.pages-flex {
+  flex: .8;
+  margin-left: 2.5%;
+  align-items: center;
+}
+
+.pages {
+  position: fixed;
+}
+
+.pages a {
+  display: block;
+  font-size: 2vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(100, 100, 100);
+  text-decoration: none;
+  margin-bottom: 2vh;
+  transition: font-size 0.3s ease;
+}
+
+.pages a:hover {
+  font-size: 3vh;
+}
+
+.pages a.a {
+  color: #FFBF00;
+}
+
+.pages a.c {
+  color: #FFA07A;
+}
+
+.pages a.h {
+  color: #DF73FF;
+}
+
+.pages a.ma {
+  color: #E0B0FF;
+}
+
+.pages a.mm {
+  color: #6050DC;
+}
+
+.posts {
+  flex: 4;
+}
+
+.post {
+  background-color: #FFFFFF;
+  margin-bottom: 1%;
+  padding: 1vh;
+  border-radius: 1vh;
+  width: 98%;
+}
+
+.post .user {
+  font-weight: bold;
+}
+
+.post .time {
+  color: rgb(100, 100, 100);;
+}
+
+.post .content {
+  margin-top: 1vh;
+}
+
+.make-post {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.create {
+  position: fixed;
+  background-color: rgb(48, 172, 255);
+  padding: 1vh;
+  width: 13vw;
+  height: 8vh;
+  cursor: pointer;
+  border: none;
+  border-radius: 5vh;
+  font-size: 2.5vh;
+  font-weight: bolder;
+  color: #FFFFFF;
+}
+
+.create:hover {
+  background-color: rgb(117, 200, 255);
+}
+
+#postPopup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50%;
+  width: 50%;
+  padding: 2%;
+  border-radius: 2vh;
+  background-color: rgb(100, 100, 100);
+  z-index: 1000;
+  color: #fff;
+  overflow: hidden;
+  text-align: left;
+}
+
+#postTextArea {
+  width: 90%;
+  height: 90%;
+}

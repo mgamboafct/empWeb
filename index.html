@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achmm</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5898ab3bb8.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="header-name">
+            <h1 id="name" class="name">Empreendorismo</h1>
+            <h3 class="date">2023/24</h2>
+        </div>
+        
+        <div class="login">
+            <button class="login-btn" onclick="openPopup()">Login</button>
+        </div>
+
+        <div class="popup" id="loginPopup">
+            <h2 class="userName">Login</h2>
+            <ul class="userList">
+                <li id="a" onclick="selectUser('André')">André</li>
+                <li id="c" onclick="selectUser('Constança')">Constança</li>
+                <li id="h" onclick="selectUser('Helena')">Helena</li>
+                <li id="ma" onclick="selectUser('Maria')">Maria</li>
+                <li id="mm" onclick="selectUser('Martim')">Martim</li>
+            </ul>
+            <button id="close" onclick="closePopup()">X</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="folders">
+            <div class="folder">
+                <a href="page/page.html?page_name=Apontamentos&user_page=false">
+                <i class="fa-solid fa-folder"></i>
+                </a>
+                <p class="folder-desc">Apontamentos</p>
+            </div>
+            <div class="folder">
+                <a href="page/page.html?page_name=Avisos&user_page=false">
+                <i class="fa-solid fa-folder"></i>
+                </a>
+                <p class="folder-desc">Avisos</p>
+            </div>
+            <div class="folder">
+                <a href="calendar/calendar.html">
+                <i class="fa-solid fa-folder"></i>
+                </a>
+                <p class="folder-desc">Calendário</p>
+            </div>
+            <div class="folder">
+                <a href="gpt/gpt.html">
+                <i class="fa-solid fa-folder"></i>
+                </a>
+                <p class="folder-desc">ChatGPT</p>
+            </div>
+            <div class="folder">
+                <a href="page/page.html?page_name=Projeto&user_page=false">
+                <i class="fa-solid fa-folder"></i>
+                </a>
+                <p class="folder-desc">Projeto</p>
+            </div>
+            <div class="folder">
+                <a href="page/page.html?page_name=André&user_page=true">
+                <i class="fa-solid fa-folder a-folder"></i>
+                </a>
+                <p class="folder-desc">André</p>
+            </div>
+            <div class="folder">
+                <a href="page/page.html?page_name=Constança&user_page=true">
+                <i class="fa-solid fa-folder c-folder"></i>
+                </a>
+                <p class="folder-desc">Constança</p>
+            </div>
+            <div class="folder">
+                <a href="page/page.html?page_name=Helena&user_page=true">
+                <i class="fa-solid fa-folder h-folder"></i>
+                </a>
+                <p class="folder-desc">Helena</p>
+            </div>
+            <div class="folder">
+                <a href="page/page.html?page_name=Maria&user_page=true">
+                <i class="fa-solid fa-folder ma-folder"></i>
+                </a>
+                <p class="folder-desc">Maria</p>
+            </div>
+            <div class="folder">
+                <a href="page/page.html?page_name=Martim&user_page=true">
+                <i class="fa-solid fa-folder mm-folder"></i>
+                </a>
+                <p class="folder-desc">Martim</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="clock"></div>
+    </footer>
+</body>
+</html>

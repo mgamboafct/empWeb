@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahcmm - Calendário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../page/style.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://kit.fontawesome.com/5898ab3bb8.js" crossorigin="anonymous"></script>
+    <script src="../script.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="header-name">
+            <h1 class="name">Calendário</h1>
+        </div>
+        
+        <div class="login">
+            <button class="login-btn" onclick="openPopup()">Login</button>
+        </div>
+
+        <div class="popup" id="loginPopup">
+            <h2 class="userName">Login</h2>
+            <ul class="userList">
+                <li id="a" onclick="selectUser('André')">André</li>
+                <li id="c" onclick="selectUser('Constança')">Constança</li>
+                <li id="h" onclick="selectUser('Helena')">Helena</li>
+                <li id="ma" onclick="selectUser('Maria')">Maria</li>
+                <li id="mm" onclick="selectUser('Martim')">Martim</li>
+            </ul>
+            <button id="close" onclick="closePopup()">X</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="pages-flex">
+            <nav class="pages">
+                <a href="../index.html">Página Principal</a>
+                <a href="page.html?page_name=Apontamentos&user_page=false">Apontamentos</a>
+                <a href="page.html?page_name=Avisos&user_page=false">Avisos</a>
+                <a href="../calendar/calendar.html">Calendário</a>
+                <a href="../gpt/gpt.html">ChatGpt</a>
+                <a href="page.html?page_name=Projeto&user_page=false">Projeto</a>
+
+                <br>
+                <a class="a" href="page.html?page_name=André&user_page=true">André</a>
+                <a class="c" href="page.html?page_name=Constança&user_page=true">Constança</a>
+                <a class="h" href="page.html?page_name=Helena&user_page=true">Helena</a>
+                <a class="ma" href="page.html?page_name=Maria&user_page=true">Maria</a>
+                <a class="mm" href="page.html?page_name=Martim&user_page=true">Martim</a>
+            </nav>
+        </div>
+
+        <div class="calendar">
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23faf7f0&ctz=Europe%2FLisbon&showNav=1&showTitle=0&showDate=1&showPrint=0&showTabs=1&showTz=0&showCalendars=0&src=Y181M2E0MTJjZGFjZDgwZDFlYTg2MWZmMTYyZDM2OTBlMzMwZTNmZDc0MTk4ZTJhMzQ4NWEzYzE0YjcxZjNhMGRiQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23E4C441" style="border-width:0" width="1000" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div class="make-post">
+        </div>
+    </main>
+
+    <footer>
+        <div id="clock"></div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #FAF7F0;
+}
+
+header {
+    display: flex;
+    align-items: top;
+    margin: 5% 1% 1% 2.5%;
+    height: 5vh;
+}
+
+.name {
+    position: fixed;
+    font-size: 1.5vw;
+    margin: 0;
+}
+
+.date {
+    position: fixed;
+    font-size: 1vw;
+    margin-top: 2.5%;
+}
+
+.login {
+    position: fixed;
+    right: 2vw;
+}
+
+.login-btn {
+    background-color: rgb(25, 25, 25);
+    padding: 1vh;
+    width: 13vw;
+    cursor: pointer;
+    border: none;
+    border-radius: 5vh;
+    font-size: 2vh;
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+
+.login-btn:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+#loginPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2%;
+    border-radius: 2vh;
+    background-color: rgb(100, 100, 100);
+    z-index: 1000;
+    color: #fff;
+    overflow: hidden;
+    text-align: left;
+}
+
+.userName {
+    font-size: 3vh;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.userList li {
+    font-size: 2vh;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.userList #a:hover {
+    cursor: pointer;
+    color: #FFBF00;
+}
+
+.userList #c:hover {
+    cursor: pointer;
+    color: #FFA07A;
+}
+
+.userList #h:hover {
+    cursor: pointer;
+    color: #DF73FF;
+}
+
+.userList #ma:hover {
+    cursor: pointer;
+    color: #E0B0FF;
+}
+
+.userList #mm:hover {
+    cursor: pointer;
+    color: #6050DC;
+}
+
+.popup #close {
+    position: absolute;
+    top: 4%;
+    right: 6%;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    font-size: 2vh;
+}
+
+.popup #close:hover {
+    color: rgb(255, 121, 121);
+}
+
+.folders {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    margin-top: 5vh;
+}
+
+.folder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh;
+}
+
+.fa-folder {
+    font-size: 10vh;
+    color: rgb(117, 200, 255);
+    transition: font-size 0.3s ease;
+}
+
+.a-folder {
+    color: #FFBF00;
+}
+
+.c-folder {
+    color: #FFA07A;
+}
+
+.h-folder {
+    color: #DF73FF;
+}
+
+.ma-folder {
+    color: #E0B0FF;
+}
+
+.mm-folder {
+    color: #6050DC;
+}
+
+.fa-folder:hover {
+    font-size: 12vh;
+}
+
+.folder-desc {
+    font-size: 1.5vh;
+    font-weight: bold;
+    color: rgb(100, 100, 100)
+}
+
+footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 5vh;
+}
+
+#clock {
+    font-size: 2.2vh;
+    text-align: right;
+  }
+
+@media only screen and (max-aspect-ratio: 1/1) {
+
+    .folders {
+        grid-template-columns: auto auto auto;
+    }
+
+}

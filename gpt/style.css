@@ -1,0 +1,42 @@
+.gpt {
+    flex: 4;
+    overflow: hidden;
+    height: 65vh ;
+}
+
+.messages {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    height: 100%;
+    overflow: scroll;
+}
+
+.message {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 45%;
+    margin-left: 50%;
+}
+
+.user-message {
+    text-align: right;
+}
+
+.input-container {
+    display: flex;
+    width: 70vw;
+    position: fixed;
+    background-color: transparent;
+    bottom: 4vh;
+    left: 15vw;
+}
+
+.user-input {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
