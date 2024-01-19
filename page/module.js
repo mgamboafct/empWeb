@@ -169,6 +169,9 @@ function calculateTimeDifference(postTime) {
     const minutesDifference = Math.floor(difference / (1000 * 60));
 
     if (minutesDifference < 60 * 24) {
+        if (minutesDifference > 60) {
+            return Math.round(minutesDifference / 60) + 'h';
+        }
         return minutesDifference + 'min';
     } else {
         const postDate = new Date(postTime);
