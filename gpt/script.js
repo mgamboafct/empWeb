@@ -10,3 +10,5 @@ function sendMessage() {
 
     document.getElementById('userInput').value = '';
 }
+
+alert("Em construção :)")
