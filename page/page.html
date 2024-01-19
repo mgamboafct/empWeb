@@ -11,7 +11,6 @@
     <script type="module" src="module.js"></script>
 </head>
 <body>
-    
     <header>
         <div class="header-name">
             <h1 class="name"></h1>
@@ -51,92 +50,9 @@
                 <a class="mm" href="../page/page.html?page_name=Martim&user_page=true">Martim</a>
             </nav>
         </div>
-        <div class="posts">
-            <div class="post">
-              <span class="user">Username1</span>
-              <span> - </span>
-              <span class="time">22min</span>
-              <p class="content">This is the content of the first post.</p>
-            </div>
-            <div class="post">
-              <span class="user">Username2</span>
-              <span> - </span>
-              <span class="time">22min</span>
-              <p class="content">Another post with some content.</p>
-            </div>
-            <div class="post">
-              <span class="user">Username2</span>
-              <span> - </span>
-              <span class="time">22min</span>
-              <p class="content">Another post with some content.</p>
-            </div>
-            <div class="post">
-              <span class="user">Username2</span>
-              <span> - </span>
-              <span class="time">22min</span>
-              <p class="content">Another post with some content.</p>
-            </div>
-            <div class="post">
-              <span class="user">Username2</span>
-              <span> - </span>
-              <span class="time">22min</span>
-              <p class="content">Another post with some content.</p>
-            </div>
-            <div class="post">
-              <span class="user">Username2</span>
-              <span> - </span>
-              <span class="time">22min</span>
-              <p class="content">Another post with some content.</p>
-            </div>
-            <div class="post">
-              <span class="user">Username2</span>
-              <span> - </span>
-              <span class="time">22min</span>
-              <p class="content">Another post with some content.</p>
-            </div>
-            <div class="post">
-              <span class="user">Username2</span>
-              <span> - </span>
-              <span class="time">22min</span>
-              <p class="content">Another post with some content.</p>
-            </div>
-            <div class="post">
-              <span class="user">Username2</span>
-              <span> - </span>
-              <span class="time">22min</span>
-              <p class="content">Another post with some content.</p>
-            </div>
-            <div class="post">
-              <span class="user">Username2</span>
-              <span> - </span>
-              <span class="time">22min</span>
-              <p class="content">Another post with some content.</p>
-            </div>
-            <div class="post">
-              <span class="user">Username2</span>
-              <span> - </span>
-              <span class="time">22min</span>
-              <p class="content">Another post with some content.</p>
-            </div>
-            <div class="post">
-              <span class="user">Username2</span>
-              <span> - </span>
-              <span class="time">22min</span>
-              <p class="content">Another post with some content.</p>
-            </div>
-            <div class="post">
-              <span class="user">Username2</span>
-              <span> - </span>
-              <span class="time">22min</span>
-              <p class="content">Another post with some content.</p>
-            </div>
-            <div class="post">
-              <span class="user">Username2</span>
-              <span> - </span>
-              <span class="time">22min</span>
-              <p class="content">Another post with some content.</p>
-            </div>
-          </div>
+        <div class="posts" id="postsContainer">
+
+        </div>
         <div class="make-post">
             <button id='create_btn' class="create" onclick="openPostPopup()">Publicar</button>
         </div>
@@ -146,9 +62,9 @@
         
             <textarea id="postTextArea" placeholder="Escreve a tua publicação..."></textarea>
         
-            <input type="file" id="fileInput" accept="image/*, video/*, audio/*">
+            <input type="file" id="fileInput">
         
-            <button id="submit" onclick="submitPost()">Submit</button>
+            <button id="submit" onclick="closePostPopup()">Submeter</button>
         </div>
         
     </main>
