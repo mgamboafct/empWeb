@@ -121,6 +121,10 @@ main {
   height: 90%;
 }
 
+#create_btn2 {
+  display: none;
+}
+
 @media only screen and (max-aspect-ratio: 1/1) {
 
   .pages {
@@ -180,6 +184,7 @@ main {
   }
 
   #create_btn2 {
+    display: block;
     width: 50vw;
     bottom: 1vh;
   }
