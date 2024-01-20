@@ -172,18 +172,56 @@ footer {
     position: fixed;
     right: 0;
     bottom: 0;
-    margin: 5vh;
 }
 
 #clock {
     font-size: 2.2vh;
     text-align: right;
+    margin: 5vh;
   }
 
 @media only screen and (max-aspect-ratio: 1/1) {
 
     .folders {
         grid-template-columns: auto auto auto;
+    }
+
+    header {
+        position: fixed;
+        background-color: #FAF7F0;
+        height: 10vh;
+        width: 100vw;
+        margin: 0;
+        left: 0;
+        top: 0;
+    }
+
+    .header-name {
+        margin-left: 5vw;
+        margin-top: 2vh;
+    }
+
+    .name {
+        position: relative;
+        font-size: 2.5vh;
+    }
+    
+    .date {
+        position: relative;
+        font-size: 1.5vh;
+        margin: 0;
+    }
+
+    .folders {
+        margin-top: 10vh;
+    }
+
+    .login-btn {
+        position: relative;
+        padding: 1vh;
+        width: 20vw;
+        margin-right: 3vw;
+        margin-top: 2.5vh;
     }
 
 }

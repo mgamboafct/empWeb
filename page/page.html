@@ -35,7 +35,7 @@
 
     <main>
         <div class="pages-flex">
-            <nav class="pages">
+            <nav class="pages" id="menu-pages">
                 <a href="../index.html">Página Principal</a>
                 <a href="../page/page.html?page_name=Apontamentos&user_page=false">Apontamentos</a>
                 <a href="../page/page.html?page_name=Avisos&user_page=false">Avisos</a>
@@ -70,6 +70,14 @@
     </main>
 
     <footer>
+        <div class="menu-btn" onclick="openMenu()">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+        <div class="make-post">
+            <button id='create_btn2' class="create" onclick="openPostPopup()">Publicar</button>
+        </div>
         <div id="clock"></div>
     </footer>
 </body>

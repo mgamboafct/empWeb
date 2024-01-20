@@ -56,6 +56,7 @@ function handlePageLoad() {
 
     if(userPage === 'true') {
         document.getElementById('create_btn').style.display = 'none';
+        document.getElementById('create_btn2').style.display = 'none';
 
         if(pageName === 'André') {
             document.querySelector('.name').style.color = '#FFBF00';
@@ -91,6 +92,14 @@ function closePostPopup() {
     document.getElementById('postPopup').style.display = 'none';
 }
 
+function openMenu() {
+    document.getElementById('menu-pages').style.display = 'block';
+}
+
+function closeMenu() {
+    document.getElementById('menu-pages').style.display = 'none';
+}
+
 function selectUser(user) {
     document.cookie = 'user=' + user + '; path=/';
     closePopup();
@@ -122,14 +131,20 @@ window.addEventListener('load', handlePageLoad);
 document.addEventListener('click', function(event) {
     var loginPopup = document.getElementById('loginPopup');
     var postPopup = document.getElementById('postPopup');
+    var menuPopup = document.getElementById('menu-pages');
     var loginBtn = document.querySelector('.login-btn');
-    var postBtn = document.querySelector('.create');
+    var postBtn = document.getElementById('create_btn');
+    var postBtn2 = document.getElementById('create_btn2');
+    var menuBtn = document.querySelector('.menu-btn');
     
     if (event.target !== loginBtn && !loginPopup.contains(event.target)) {
         closePopup();
     }
-    if (event.target !== postBtn && !postPopup.contains(event.target)) {
+    if (event.target !== postBtn && event.target !== postBtn2 && !postPopup.contains(event.target)) {
         closePostPopup();
+    }
+    if (event.target !== menuBtn && !menuPopup.contains(event.target)) {
+        closeMenu();
     }
 });
 
